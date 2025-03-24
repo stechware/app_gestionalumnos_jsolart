@@ -531,3 +531,61 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 2025-03-24 00:15:29 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
 2025-03-24 00:15:29 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
 2025-03-24 00:15:29 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:34:51 [main] INFO  com.idat.arquetipotrabajofinal.ArquetipoTrabajoFinal - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:35:02 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.controller.MainController - Inicio de sesión exitoso
+2025-03-24 00:35:03 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:35:03 [AWT-EventQueue-0] ERROR com.idat.arquetipotrabajofinal.config.ConexionBD - ❌ Error: No se encontró el driver de MySQL.
+java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:391) ~[?:?]
+	at java.lang.Class.forName(Class.java:382) ~[?:?]
+	at com.idat.arquetipotrabajofinal.config.ConexionBD.conectar(ConexionBD.java:31) ~[classes/:?]
+	at com.idat.arquetipotrabajofinal.repository.AlumnoRepository.obtenerAlumnos(AlumnoRepository.java:31) ~[classes/:?]
+	at com.idat.arquetipotrabajofinal.controller.AlumnoController.obtenerAlumnos(AlumnoController.java:35) ~[classes/:?]
+	at com.idat.arquetipotrabajofinal.controller.AlumnoController.mostrarVista(AlumnoController.java:77) ~[classes/:?]
+	at com.idat.arquetipotrabajofinal.view.MainView.abrirGestionAlumnos(MainView.java:120) ~[classes/:?]
+	at com.idat.arquetipotrabajofinal.view.MainView.lambda$new$0(MainView.java:57) ~[classes/:?]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972) ~[?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314) ~[?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407) ~[?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) ~[?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) ~[?:?]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6620) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3398) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6385) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4995) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4827) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4827) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:744) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2025-03-24 00:36:21 [main] INFO  com.idat.arquetipotrabajofinal.ArquetipoTrabajoFinal - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:36:31 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.controller.MainController - Inicio de sesión exitoso
+2025-03-24 00:36:32 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:36:33 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:36:33 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
