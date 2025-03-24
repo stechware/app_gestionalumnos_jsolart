@@ -3,14 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.idat.arquetipotrabajofinal.controller;
-
-import com.idat.arquetipotrabajofinal.view.AlumnoView;
-
 import com.idat.arquetipotrabajofinal.model.Alumno;
+import com.idat.arquetipotrabajofinal.repository.AlumnoRepository;
 import com.idat.arquetipotrabajofinal.view.AlumnoInternalFrame;
-import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JDesktopPane;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  *
@@ -18,29 +17,61 @@ import javax.swing.JDesktopPane;
  */
 public class AlumnoController {
     
-    //private AlumnoView alumnoView;
-    private List<Alumno> alumnos;
-
+    private static final Logger logger = LogManager.getLogger(AlumnoController.class);
+    private final AlumnoRepository alumnoRepository;
+    
     public AlumnoController() {
-        alumnos = new ArrayList<>();
-        loadDummyData();
-        //alumnoView = new AlumnoView(alumnos);
+        this.alumnoRepository = new AlumnoRepository();
     }
 
-    private void loadDummyData() {
-        alumnos.add(new Alumno(1, "Juan Perez", "juan@example.com"));
-        alumnos.add(new Alumno(2, "Maria Lopez", "maria@example.com"));
-        alumnos.add(new Alumno(3, "Carlos Sanchez", "carlos@example.com"));
+    /**
+     * Obtiene la lista de alumnos desde la base de datos.
+     */
+    public List<Alumno> obtenerAlumnos() {
+        return alumnoRepository.obtenerAlumnos();
     }
-    
-    //public void mostrarVista() {
-    //    alumnoView.setVisible(true);
-    //}
-    
+
+    /**
+     * Agrega un nuevo alumno a la base de datos.
+     */
+    public boolean agregarAlumno(Alumno alumno) {
+        
+        boolean resultado = alumnoRepository.insertarAlumno(alumno);
+        if (resultado) {
+            logger.info("✅ Alumno agregado correctamente: {}", alumno);
+        }
+        return resultado;
+    }
+
+    /**
+     * Actualiza un alumno existente en la base de datos.
+     */
+    public boolean actualizarAlumno(Alumno alumno) {
+        boolean resultado = alumnoRepository.actualizarAlumno(alumno);
+        if (resultado) {
+            logger.info("✅ Alumno actualizado correctamente: {}", alumno);
+        }
+        return resultado;
+    }
+
+    /**
+     * Elimina un alumno de la base de datos por su ID.
+     */
+    public boolean eliminarAlumno(int id) {
+        boolean resultado = alumnoRepository.eliminarAlumno(id);
+        if (resultado) {
+            logger.info("✅ Alumno eliminado correctamente con ID: {}", id);
+        }
+        return resultado;
+    }
+
+    /**
+     * Muestra la vista de alumnos dentro de un JDesktopPane.
+     */
     public void mostrarVista(JDesktopPane desktopPane) {
+        List<Alumno> alumnos = obtenerAlumnos();
         AlumnoInternalFrame alumnoFrame = new AlumnoInternalFrame(alumnos);
         desktopPane.add(alumnoFrame);
         alumnoFrame.setVisible(true);
     }
-
 }
