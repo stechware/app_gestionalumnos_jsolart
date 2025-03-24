@@ -15,4 +15,3 @@ com\idat\arquetipotrabajofinal\repository\AlumnoRepository.class
 com\idat\arquetipotrabajofinal\view\AlumnoInternalFrame.class
 com\idat\arquetipotrabajofinal\util\TimeUtil.class
 com\idat\arquetipotrabajofinal\model\Alumno.class
-com\idat\arquetipotrabajofinal\view\AlumnoView.class

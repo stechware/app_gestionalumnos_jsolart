@@ -589,3 +589,32 @@ java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
 2025-03-24 00:36:32 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
 2025-03-24 00:36:33 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
 2025-03-24 00:36:33 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:40:19 [main] INFO  com.idat.arquetipotrabajofinal.ArquetipoTrabajoFinal - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:40:31 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.controller.MainController - Inicio de sesión exitoso
+2025-03-24 00:40:32 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:40:32 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:40:32 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:40:36 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:40:36 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:40:36 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:40:39 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:40:39 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:40:39 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:41:42 [main] INFO  com.idat.arquetipotrabajofinal.ArquetipoTrabajoFinal - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:42:06 [main] INFO  com.idat.arquetipotrabajofinal.ArquetipoTrabajoFinal - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:42:17 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.controller.MainController - Inicio de sesión exitoso
+2025-03-24 00:42:18 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:42:18 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:42:18 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:42:26 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:42:26 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:42:26 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:42:28 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:42:28 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:42:28 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:42:29 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:42:29 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:42:29 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.
+2025-03-24 00:42:34 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - Iniciando Arquetipo TrabajoFinal Desde log4j
+2025-03-24 00:42:34 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.config.ConexionBD - ✅ Conexión exitosa a la base de datos.
+2025-03-24 00:42:34 [AWT-EventQueue-0] INFO  com.idat.arquetipotrabajofinal.repository.AlumnoRepository - ✅ Se obtuvieron 9 alumnos de la BD.

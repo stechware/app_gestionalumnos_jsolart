@@ -4,7 +4,6 @@
  */
 package com.idat.arquetipotrabajofinal.controller;
 
-import com.idat.arquetipotrabajofinal.view.AlumnoView;
 
 import com.idat.arquetipotrabajofinal.model.Alumno;
 import com.idat.arquetipotrabajofinal.repository.AlumnoRepository;
@@ -38,8 +37,7 @@ public class AlumnoController {
     /**
      * Agrega un nuevo alumno a la base de datos.
      */
-    public boolean agregarAlumno(String nombre, String email) {
-        Alumno alumno = new Alumno(0, nombre, email);
+    public boolean agregarAlumno(Alumno alumno) {
         boolean resultado = alumnoRepository.insertarAlumno(alumno);
         if (resultado) {
             logger.info("✅ Alumno agregado correctamente: {}", alumno);
@@ -50,8 +48,7 @@ public class AlumnoController {
     /**
      * Actualiza un alumno existente en la base de datos.
      */
-    public boolean actualizarAlumno(int id, String nombre, String email) {
-        Alumno alumno = new Alumno(id, nombre, email);
+    public boolean actualizarAlumno(Alumno alumno) {
         boolean resultado = alumnoRepository.actualizarAlumno(alumno);
         if (resultado) {
             logger.info("✅ Alumno actualizado correctamente: {}", alumno);
@@ -74,8 +71,7 @@ public class AlumnoController {
      * Muestra la vista de alumnos dentro de un JDesktopPane.
      */
     public void mostrarVista(JDesktopPane desktopPane) {
-        List<Alumno> alumnos = obtenerAlumnos();
-        AlumnoInternalFrame alumnoFrame = new AlumnoInternalFrame(alumnos);
+        AlumnoInternalFrame alumnoFrame = new AlumnoInternalFrame(this); // Pasar el controlador
         desktopPane.add(alumnoFrame);
         alumnoFrame.setVisible(true);
     }
